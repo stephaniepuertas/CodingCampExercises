@@ -27,13 +27,18 @@ body{
     width:25%;
 }
 .item p{
-    display:inline-block
+    display:inline-block;
+    margin-top: 5px;
+    margin-bottom:5px;
+    font-size:18px;
 }
 .established{
     font-style:italic;
 }
 h1{
     font-size:40px;
+    margin:0px;
+    margin-bottom:15px;
 }
 h2{
     font-size:30px;
@@ -42,4 +47,34 @@ hr{
     height:2px;
     background-color:brown;
     border-color:brown;
+}
+.bottom-line{
+    margin-top:25px;
+}
+/* FOOTER */
+footer{
+    font-size:14px;
+}
+/* The default color of a link that has not yet been clicked on is typically blue. The default color of a link that has already been visited from a page is typically purple.
+To make the footer links the same color regardless if a link has been visited, use a type selector for the anchor element (a) and use the value black for the color property.
+ */
+a{
+    color:black;
+}
+
+/* You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }. */
+a:visited{
+    color:grey;
+}
+/* You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }. */
+a:hover{
+    color:brown;
+}
+/* You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }. */
+a:active{
+    color:white;  
+}
+
+.address{
+    margin-bottom:5px;
 }
