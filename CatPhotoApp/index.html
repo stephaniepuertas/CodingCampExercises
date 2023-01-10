@@ -43,8 +43,14 @@
         </section>
         <section>
             <h2>Cat Form</h2>
+            <!-- to prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element. There's no need to set a value to the required attribute. Instead, just add the word required to the input element, making sure there is space between it and other attributes. -->
             <form action='https://freecatphotoapp.com/submit-cat-photo'>
+                <!-- label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers) -->
+                <label> <input type="radio"> Indoor</label>
+                <input required type='text'name='catphotourl'placeholder='cat photo url>
+                <button type='submit'>Submit</button>
             </form>
+
         </section>
     </main>
 </body>
