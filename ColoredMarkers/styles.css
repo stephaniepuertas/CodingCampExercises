@@ -6,11 +6,23 @@ h1{
     width: 200px;
     margin: 10px auto;
 }
-.sleeve{
-    width:110px;
-    height:25px;
+.cap{
+    width: 60px;
+    height: 25px;
 }
-/* The linear-gradient function is very flexible -- here is the basic 
+
+/* The rgba function works just like the rgb function, but takes one more number from 0 to 1.0 for the alpha channel: rgba(redValue, greenValue, blueValue, alphaValue); */
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color:rgba(255,255,255,50%);
+    border-left: 10px double rgba(0,0,0,75%);
+    /* opacity: 0.5; */
+}
+.sleeve, .cap{
+    display: inline-block;
+}
+/* The LINEAR_GRADIENT function is very flexible -- here is the basic 
     syntax you'll use in this tutorial:
 
         linear-gradient(gradientDirection, color1, color2, ...);
@@ -20,11 +32,16 @@ h1{
     These can be any type of color, including color keywords, hex, rgb, or hsl.
  */
 
-/* Color-stops allow you to fine-tune where colors are placed along the gradient line. They are a length unit like px or percentages that follow a color in the linear-gradient function.
+/*COLOR-STOPS allow you to fine-tune where colors are placed along the gradient line. They are a length unit like px or percentages that follow a color in the linear-gradient function.
 
 For example, in this red-black gradient, the transition from red to black takes place at the 90% point along the gradient line, so red takes up most of the available space:
 
 linear-gradient(90deg, red 90%, black); */
+
+
+/* 
+ADDING BOX SHADOW SYNTAX:
+box-shadow: offsetX offsetY color; */
 .red {
     background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
 }
