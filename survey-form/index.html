@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" > Anime Survey </h1>
+    <p id="description">We will be collecting surveys to see what animes our<br>
+        audience are more or less likely to watch </p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name:
+            <input id="name" type="text" required placeholder='Enter your name'
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id='email-label'>Email: 
+                <input type='email' required id='email' placeholder='Enter your email'
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id='number-label'>Age: 
+                <input type='number' id='number' min='0' max='120' 
+                placeholder='Age'
+            </label>
+        </fieldset>
+        <fieldset>
+        <label for='dropdown'> Favorite Anime
+        <select id='dropdown'>
+            <option>Choose One</option>
+            <option>Attack On Titans</option>
+            <option>Vinland Saga</option>
+            <option>My Hero Academia</option>
+            <option>Romantic Killer</option>
+            <option>Madoka</option>
+            <option>None of the Above</option>
+        </select>
+        </label>
+        </fieldset>
+        <fieldset> 
+            <label> Where Do You Watch Anime? 
+                <input type='radio' value='subscription' name='subscription'>Netflix
+            </label>
+            <label>
+                <input type='radio' value='subscription' name='subscription'> Hulu
+            </label>
+            <label>
+                <input type='radio' value='subscription' name='subscription'> CrunchyRoll
+            </label>
+            <label>
+                <input type='radio' value='subscription' name='subscription'> Youtube
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>How Often Do You Watch Anime? 
+            <input type='checkbox' value='checkbox'> 1-2 per week</label>
+            <input type='checkbox' value='checkbox'> 3-4 per week</label>
+            <input type='checkbox' value='checkbox'> 4-5 per week</label>
+            <input type='checkbox' value='checkbox'> 6+ per week</label>
+        </fieldset>
+        <fieldset>
+            <label>Any Comments or Anime Suggestions?
+            <textarea id='textarea'placeholder='Enter Comment'> </textarea>
+            </label>
+        </fieldset>
+        <input type='submit' id='submit'>
+    </form> 
+</body>
+</html>
