@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,61 +8,138 @@
     <title>Technical Documentation Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <main id="main-doc"> 
-        <section id="'Introduction" class='main-section'>
+    <main id="main-doc">
+        <section id="Introduction" class='main-section'>
             <header>Introduction</header>
             <hr>
-            <p>JavaScript is a high-level, interpreted programming language used for front-end web development. It's a scripting language that allows developers to create interactive elements on web pages, such as dynamic forms, animated graphics, and responsive user interfaces. JavaScript is also used to build server-side applications using Node.js, which allows developers to run JavaScript on a server and create back-end systems.</p>
-            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+            <p>JavaScript is a high-level, interpreted programming language used for front-end web development. It's a
+                scripting language that allows developers to create interactive elements on web pages, such as dynamic
+                forms, animated graphics, and responsive user interfaces. JavaScript is also used to build server-side
+                applications using Node.js, which allows developers to run JavaScript on a server and create back-end
+                systems.</p>
+            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+                language elements such as operators, control structures, and statements. Core JavaScript can be extended
+                for a variety of purposes by supplementing it with additional objects; for example:</p>
             <ul>
-                <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
-                <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+                <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its
+                    Document Object Model (DOM). For example, client-side extensions allow an application to place
+                    elements on an HTML form and respond to user events such as mouse clicks, form input, and page
+                    navigation.</li>
+                <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript
+                    on a server. For example, server-side extensions allow an application to communicate with a
+                    database, provide continuity of information from one invocation to another of the application, or
+                    perform file manipulations on a server.</li>
             </ul>
-            <p>JavaScript is a loosely-typed, dynamically-typed language, which means that variables don't have to be declared with a specific type and can change type at runtime. It's also a multi-paradigm language, supporting both object-oriented and functional programming.</p>
-            <p>JavaScript is supported by all major web browsers and is one of the core technologies of the web, making it an essential skill for front-end web development.</p>
+            <p>JavaScript is a loosely-typed, dynamically-typed language, which means that variables don't have to be
+                declared with a specific type and can change type at runtime. It's also a multi-paradigm language,
+                supporting both object-oriented and functional programming.</p>
+            <p>JavaScript is supported by all major web browsers and is one of the core technologies of the web, making
+                it an essential skill for front-end web development.</p>
         </section>
         <hr>
         <section id="JavaScript_and_Java" class='main-section'>
             <header>JavaScript and Java</header>
-        <hr>
-            <p>Java and JavaScript are both programming languages but they have different syntax, paradigms and use cases:</p>
+            <hr>
+            <p>Java and JavaScript are both programming languages but they have different syntax, paradigms and use
+                cases:</p>
             <ul>
-                <li>Java is an object-oriented, statically-typed, general-purpose programming language designed for building complex, large-scale applications. It is primarily used to develop desktop applications, mobile applications, and back-end systems.</li>
-                <li>JavaScript is a dynamically-typed, high-level, interpreted programming language that is used primarily for front-end development. It's commonly used to create interactive effects within web browsers and to develop server-side applications using Node.js.  </li>
+                <li>Java is an object-oriented, statically-typed, general-purpose programming language designed for
+                    building complex, large-scale applications. It is primarily used to develop desktop applications,
+                    mobile applications, and back-end systems.</li>
+                <li>JavaScript is a dynamically-typed, high-level, interpreted programming language that is used
+                    primarily for front-end development. It's commonly used to create interactive effects within web
+                    browsers and to develop server-side applications using Node.js. </li>
             </ul>
-            <p>In short, Java is a powerful language for complex applications, while JavaScript is a flexible language for building interactive web applications.</p>
+            <p>In short, Java is a powerful language for complex applications, while JavaScript is a flexible language
+                for building interactive web applications.</p>
         </section>
         <hr>
         <section id='Hello_World' class='main-section'>
             <header>Hello World</header>
             <hr>
-            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
+                code:</p>
             <code>
                 function greetMe(yourName) { alert("Hello " + yourName); }
                 greetMe("World");
             </code>
             <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
-            <p>You can run this code in the JavaScript console in your web browser's developer tools, or you can save it as a .js file and run it using a JavaScript interpreter such as Node.js.</p>
+            <p>You can run this code in the JavaScript console in your web browser's developer tools, or you can save it
+                as a .js file and run it using a JavaScript interpreter such as Node.js.</p>
         </section>
         <hr>
         <section id='Variables' class='main-section'>
             <header>Variables</header>
             <hr>
-            <p>In JavaScript, variables are used to store data values. You can declare a variable using the "var" keyword (although it's recommended to use "let" or "const" instead), followed by the name of the variable. For example:</p>
+            <p>In JavaScript, variables are used to store data values. You can declare a variable using the "var"
+                keyword (although it's recommended to use "let" or "const" instead), followed by the name of the
+                variable. For example:</p>
             <code>let message = "Hello, World!";</code>
-            <p>Here, "message" is the name of the variable and "Hello, World!" is the value assigned to it. The value can be of any data type, such as a string, number, boolean, or even an object.</p>
-            <p></p>
-            <p></p>
+            <p>Here, "message" is the name of the variable and "Hello, World!" is the value assigned to it. The value
+                can be of any data type, such as a string, number, boolean, or even an object.</p>
+            <p>It's worth noting that in JavaScript, variables declared with var are function scoped, while variables
+                declared with let or const are block scoped. This means that variables declared with let and const are
+                only accessible within the block of code in which they are declared, while var variables can be accessed
+                throughout the entire function.</p>
+            <code>let x = 10;
+                x = 20; // valid, you can reassign a value to a variable declared with let
+                
+                const y = 30;
+                y = 40; // invalid, you can't reassign a value to a variable declared with const
+                </code>
+            <p>In conclusion, you can use variables in JavaScript to store and manipulate data, and it's important to
+                choose the appropriate keyword (var, let, or const) based on your intended scope and whether or not you
+                want to allow the value to be reassigned.</p>
+            <hr>
         </section>
         <section id='Declaring_variables' class='main-section'>
             <header>Declaring variables</header>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <hr>
+            <p>In JavaScript, you can declare variables using the var, let, or const keywords.</p>
+            <p>Here's an example of declaring a variable using var:</p>
+            <code>var name = "John Doe";</code>
+            <p>Here's an example of declaring a variable using let: </p>
+            <code>let age = 30;</code>
+            <p>And here's an example of declaring a variable using const: </p>
+            <code>const PI = 3.14;           </code>
+            <p>It's worth noting that var is function scoped, while let and const are block scoped. This means that
+                variables declared with let and const are only accessible within the block of code in which they are
+                declared, while var variables can be accessed throughout the entire function.</p>
+            <p>In general, it's recommended to use let or const instead of var, as they provide better scope control and
+                make your code more maintainable and predictable. </p>
+            <hr>
+        </section>
+        <section id="If_Else_Statements" class='main-section'>
+            <header>If-Else Statements</header>
+            <hr>
+            <p>In JavaScript, an if-else statement is used to execute a block of code based on a condition. The syntax
+                for an if-else statement is as follows:</p>
+            <code>if (condition) {
+                // code to be executed if the condition is true
+            } else {
+                // code to be executed if the condition is false
+            }
+            </code>
+            <ul>
+                <li>Here, condition is a boolean expression that evaluates to either true or false. If the condition is
+                    true, the code inside the first block (between the curly braces {}) will be executed. If the
+                    condition is false, the code inside the second block will be executed instead.</li>
+                <li>Here's an example of an if-else statement in action: </li>
+                <li><code>let score = 75;
+
+                    if (score >= 60) {
+                    console.log("You passed the exam!");
+                    } else {
+                    console.log("You failed the exam. Better luck next time.");
+                    }
+                    </code></li>
+                <li>In this example, the value of score is compared to 60. If score is greater than or equal to 60, the message "You passed the exam!" will be logged to the console. If score is less than 60, the message "You failed the exam. Better luck next time." will be logged to the console instead.</li>
+            </ul>
         </section>
     </main>
-    
+
 </body>
+
 </html>
